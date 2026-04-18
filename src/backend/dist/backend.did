@@ -1,0 +1,27 @@
+type UserRole = 
+ variant {
+   admin;
+   guest;
+   user;
+ };
+type LanguageSummary = 
+ record {
+   language: text;
+   savedAt: int;
+ };
+type CodeSnippet = 
+ record {
+   code: text;
+   language: text;
+   savedAt: int;
+ };
+service : {
+  _initializeAccessControl: () -> ();
+  assignCallerUserRole: (user: principal, role: UserRole) -> ();
+  deleteCode: (language: text) -> ();
+  getCallerUserRole: () -> (UserRole) query;
+  isCallerAdmin: () -> (bool) query;
+  listLanguages: () -> (vec LanguageSummary) query;
+  loadCode: (language: text) -> (opt CodeSnippet) query;
+  saveCode: (language: text, code: text) -> ();
+}

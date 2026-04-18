@@ -1,0 +1,26 @@
+{
+  "overview": "A production-grade multi-language code editor in the browser. Write and run code in 16 languages with Monaco editor, dark glassmorphism UI, real-time output, code saving, and shareable links.",
+  "features": [
+    "16-language code execution via Piston API",
+    "Monaco editor with syntax highlighting and dark theme",
+    "Three-column IDE layout: language sidebar, editor, output console",
+    "Guest mode with instant editor access; sign in to save code",
+    "Per-language code saving with auto-load on language switch",
+    "URL-encoded shareable code links",
+    "HTML/CSS live preview iframe",
+    "Keyboard shortcut Ctrl+Enter to run",
+    "Font size and tab size controls",
+    "Dark glassmorphism theme with neon accents"
+  ],
+  "category": "productivity",
+  "tags": [
+    "code-editor",
+    "ide",
+    "multi-language",
+    "monaco",
+    "piston-api",
+    "code-execution",
+    "developer-tools"
+  ],
+  "last_updated": "2026-04-18T21:40:23.097Z"
+}
